@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="favicon.ico"><![endif]--><link href=https://cdn.bootcss.com/animate.css/3.7.2/animate.css rel=stylesheet><title>vue-material-admin</title><style>.item-loader-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .la-square-jelly-box,
+    .la-square-jelly-box>div {
+      position: relative;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    .la-square-jelly-box {
+      display: block;
+      font-size: 0;
+      color: #12ca2b
+    }
+
+    .la-square-jelly-box.la-dark {
+      color: #333
+    }
+
+    .la-square-jelly-box>div {
+      display: inline-block;
+      float: none;
+      background-color: currentColor;
+      border: 0 solid currentColor
+    }
+
+    .la-square-jelly-box {
+      width: 32px;
+      height: 32px
+    }
+
+    .la-square-jelly-box .text {
+      position: absolute;
+      width: 100%;
+      top: 100;
+    }
+
+    .la-square-jelly-box>div:nth-child(1),
+    .la-square-jelly-box>div:nth-child(2) {
+      position: absolute;
+      left: 0;
+      width: 100%
+    }
+
+    .la-square-jelly-box>div:nth-child(1) {
+      top: -25%;
+      z-index: 1;
+      height: 100%;
+      border-radius: 10%;
+      -webkit-animation: square-jelly-box-animate 0.6s -0.1s linear infinite;
+      -moz-animation: square-jelly-box-animate 0.6s -0.1s linear infinite;
+      -o-animation: square-jelly-box-animate 0.6s -0.1s linear infinite;
+      animation: square-jelly-box-animate 0.6s -0.1s linear infinite
+    }
+
+    .la-square-jelly-box>div:nth-child(2) {
+      bottom: -9%;
+      height: 10%;
+      background: #000;
+      border-radius: 50%;
+      opacity: .2;
+      -webkit-animation: square-jelly-box-shadow 0.6s -0.1s linear infinite;
+      -moz-animation: square-jelly-box-shadow 0.6s -0.1s linear infinite;
+      -o-animation: square-jelly-box-shadow 0.6s -0.1s linear infinite;
+      animation: square-jelly-box-shadow 0.6s -0.1s linear infinite
+    }
+
+    .la-square-jelly-box.la-sm {
+      width: 16px;
+      height: 16px
+    }
+
+    .la-square-jelly-box.la-2x {
+      width: 64px;
+      height: 64px
+    }
+
+    .la-square-jelly-box.la-3x {
+      width: 96px;
+      height: 96px
+    }
+
+    @-webkit-keyframes square-jelly-box-animate {
+      17% {
+        border-bottom-right-radius: 10%
+      }
+
+      25% {
+        -webkit-transform: translateY(25%) rotate(22.5deg);
+        transform: translateY(25%) rotate(22.5deg)
+      }
+
+      50% {
+        border-bottom-right-radius: 100%;
+        -webkit-transform: translateY(50%) scale(1, 0.9) rotate(45deg);
+        transform: translateY(50%) scale(1, 0.9) rotate(45deg)
+      }
+
+      75% {
+        -webkit-transform: translateY(25%) rotate(67.5deg);
+        transform: translateY(25%) rotate(67.5deg)
+      }
+
+      100% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg)
+      }
+    }
+
+    @-moz-keyframes square-jelly-box-animate {
+      17% {
+        border-bottom-right-radius: 10%
+      }
+
+      25% {
+        -moz-transform: translateY(25%) rotate(22.5deg);
+        transform: translateY(25%) rotate(22.5deg)
+      }
+
+      50% {
+        border-bottom-right-radius: 100%;
+        -moz-transform: translateY(50%) scale(1, 0.9) rotate(45deg);
+        transform: translateY(50%) scale(1, 0.9) rotate(45deg)
+      }
+
+      75% {
+        -moz-transform: translateY(25%) rotate(67.5deg);
+        transform: translateY(25%) rotate(67.5deg)
+      }
+
+      100% {
+        -moz-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg)
+      }
+    }
+
+    @-o-keyframes square-jelly-box-animate {
+      17% {
+        border-bottom-right-radius: 10%
+      }
+
+      25% {
+        -o-transform: translateY(25%) rotate(22.5deg);
+        transform: translateY(25%) rotate(22.5deg)
+      }
+
+      50% {
+        border-bottom-right-radius: 100%;
+        -o-transform: translateY(50%) scale(1, 0.9) rotate(45deg);
+        transform: translateY(50%) scale(1, 0.9) rotate(45deg)
+      }
+
+      75% {
+        -o-transform: translateY(25%) rotate(67.5deg);
+        transform: translateY(25%) rotate(67.5deg)
+      }
+
+      100% {
+        -o-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg)
+      }
+    }
+
+    @keyframes square-jelly-box-animate {
+      17% {
+        border-bottom-right-radius: 10%
+      }
+
+      25% {
+        -webkit-transform: translateY(25%) rotate(22.5deg);
+        -moz-transform: translateY(25%) rotate(22.5deg);
+        -o-transform: translateY(25%) rotate(22.5deg);
+        transform: translateY(25%) rotate(22.5deg)
+      }
+
+      50% {
+        border-bottom-right-radius: 100%;
+        -webkit-transform: translateY(50%) scale(1, 0.9) rotate(45deg);
+        -moz-transform: translateY(50%) scale(1, 0.9) rotate(45deg);
+        -o-transform: translateY(50%) scale(1, 0.9) rotate(45deg);
+        transform: translateY(50%) scale(1, 0.9) rotate(45deg)
+      }
+
+      75% {
+        -webkit-transform: translateY(25%) rotate(67.5deg);
+        -moz-transform: translateY(25%) rotate(67.5deg);
+        -o-transform: translateY(25%) rotate(67.5deg);
+        transform: translateY(25%) rotate(67.5deg)
+      }
+
+      100% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        -moz-transform: translateY(0) rotate(90deg);
+        -o-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg)
+      }
+    }
+
+    @-webkit-keyframes square-jelly-box-shadow {
+      50% {
+        -webkit-transform: scale(1.25, 1);
+        transform: scale(1.25, 1)
+      }
+    }
+
+    @-moz-keyframes square-jelly-box-shadow {
+      50% {
+        -moz-transform: scale(1.25, 1);
+        transform: scale(1.25, 1)
+      }
+    }
+
+    @-o-keyframes square-jelly-box-shadow {
+      50% {
+        -o-transform: scale(1.25, 1);
+        transform: scale(1.25, 1)
+      }
+    }
+
+    @keyframes square-jelly-box-shadow {
+      50% {
+        -webkit-transform: scale(1.25, 1);
+        -moz-transform: scale(1.25, 1);
+        -o-transform: scale(1.25, 1);
+        transform: scale(1.25, 1)
+      }
+    }</style><link href=css/chunk-2311397e.b6af5a7f.css rel=prefetch><link href=css/chunk-49bdb77e.90f50eec.css rel=prefetch><link href=css/chunk-568be99a.0ccb04eb.css rel=prefetch><link href=css/chunk-5775c85a.0ccb04eb.css rel=prefetch><link href=css/chunk-5a7cf731.ed8f14c1.css rel=prefetch><link href=css/chunk-6a71db13.b446ef84.css rel=prefetch><link href=css/chunk-705a6214.0ccb04eb.css rel=prefetch><link href=css/chunk-72624f06.03eaea7e.css rel=prefetch><link href=css/chunk-74bb30d8.10af956c.css rel=prefetch><link href=css/chunk-8ca8fc18.0ccb04eb.css rel=prefetch><link href=css/chunk-9cd03004.0ccb04eb.css rel=prefetch><link href=js/chunk-2311397e.3db07b71.js rel=prefetch><link href=js/chunk-2d0a4058.5837575e.js rel=prefetch><link href=js/chunk-2d0c06e2.7dc11b8b.js rel=prefetch><link href=js/chunk-2d0c554b.cb20de40.js rel=prefetch><link href=js/chunk-2d0d695d.7a4854f5.js rel=prefetch><link href=js/chunk-2d0e5357.088aa254.js rel=prefetch><link href=js/chunk-2d20eb66.59b38300.js rel=prefetch><link href=js/chunk-2d2214d1.2523c863.js rel=prefetch><link href=js/chunk-2d222165.83e489de.js rel=prefetch><link href=js/chunk-2d224540.21633761.js rel=prefetch><link href=js/chunk-49bdb77e.c5ec0208.js rel=prefetch><link href=js/chunk-568be99a.9d265b92.js rel=prefetch><link href=js/chunk-5775c85a.642a6848.js rel=prefetch><link href=js/chunk-5a7cf731.1e240869.js rel=prefetch><link href=js/chunk-6a71db13.14cddde0.js rel=prefetch><link href=js/chunk-705a6214.023d95d5.js rel=prefetch><link href=js/chunk-72624f06.bc3c5bf0.js rel=prefetch><link href=js/chunk-74bb30d8.b58e1b1e.js rel=prefetch><link href=js/chunk-8ca8fc18.7edf9309.js rel=prefetch><link href=js/chunk-9cd03004.13428ccf.js rel=prefetch><link href=css/chunk-vendors.0611af8a.css rel=preload as=style><link href=css/index.ee9f0c1b.css rel=preload as=style><link href=js/chunk-vendors.99f2fe9a.js rel=preload as=script><link href=js/index.b103d4fd.js rel=preload as=script><link href=css/chunk-vendors.0611af8a.css rel=stylesheet><link href=css/index.ee9f0c1b.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=img/icons/favicon-16x16.png><link rel=manifest href=manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=vue-material-admin><link rel=apple-touch-icon href=img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><noscript><strong>We're sorry but vue-material-admin doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=item-loader-container id=loading><div class=la-square-jelly-box><div></div><div></div></div></div><div id=app></div><script src=js/chunk-vendors.99f2fe9a.js></script><script src=js/index.b103d4fd.js></script></body></html>
