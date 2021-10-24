@@ -45,7 +45,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "ccc5be8c87040f0c1c0c",
-    "url": "css/chunk-vendors.0611af8a.css"
+    "url": "https://cdn.jsdelivr.net/gh/Dwsy/jsdelivr_cdn@master/nestblog/blog-admin/css/chunk-vendors.0611af8a.css"
   },
   {
     "revision": "eaf0e35ebf19eeb22b15",
@@ -61,7 +61,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "d0066537ab6a4c6f8285a5aeb3ba5f09",
-    "url": "fonts/materialdesignicons-webfont.d0066537.woff2"
+    "url": "https://cdn.jsdelivr.net/gh/Dwsy/jsdelivr_cdn@master/nestblog/blog-admin/fonts/materialdesignicons-webfont.d0066537.woff2"
   },
   {
     "revision": "f51112347be6b44f9ef46151a971430d",
@@ -157,7 +157,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "ccc5be8c87040f0c1c0c",
-    "url": "js/chunk-vendors.99f2fe9a.js"
+    "url": "https://cdn.jsdelivr.net/gh/Dwsy/jsdelivr_cdn@master/nestblog/blog-admin/js/chunk-vendors.99f2fe9a.js"
   },
   {
     "revision": "eaf0e35ebf19eeb22b15",
